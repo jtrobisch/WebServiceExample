@@ -1,0 +1,4 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^elements/?$ elements.php [NC,L]
+RewriteRule ^elements/([0-9]+)/?$ elements.php?atomic_id=$1 [NC,L]
+RewriteRule ^elements/([A-Z]+)/?$ elements.php?atomic_symbol=$1 [NC,L]
